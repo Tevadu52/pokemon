@@ -22,7 +22,7 @@ class Pokemon {
 
     combattre(ennemie){
         console.log(this.name + " va combattre " + ennemie.name)
-        while(this.hp>0 || ennemie.hp>0){
+        while(this.hp>0){
             if(this.is_lucky()){
                 this.attackPokemon(ennemie);
                 console.log(ennemie.name + " a "+ennemie.hp + "hp après avoir reçu " + (this.attack-ennemie.defense) + " point de dégats.");
@@ -47,6 +47,6 @@ class Pokemon {
 }
 
 let Pikachu = new Pokemon("Pikachu", 55, 40, 35, 0.45);
-let Ouisticram = new Pokemon("Ouisticram", 48, 42, 40, 0.38);
+let Ouisticram = new Pokemon("Ouisticram", 48, 42, 40, 0.52);
 
 Pikachu.combattre(Ouisticram);
