@@ -17,6 +17,7 @@ class Pokemon {
 
     attackPokemon(ennemie){
         let degats = this.attack-ennemie.defense
+        if(degats<0){degats=0;}
         ennemie.hp -= degats;
     }
 
